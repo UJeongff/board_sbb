@@ -33,7 +33,7 @@
                    th:if="${question.author != null and #authentication.getPrincipal().getUsername() == question.author.username}"
                    th:text="삭제"></a>
             </div>
-            <!-- 질문 댓글 Start -->
+            <!-- 질문 댓글 Start
             <div th:if="${answer != null}">
                 <p th:if="${not #lists.isEmpty(answer.commentList)}">Comments:</p>
                 <ul th:if="${not #lists.isEmpty(answer.commentList)}">
@@ -59,7 +59,7 @@
             <div>
                 <a th:href="@{|/comment/create/answer/${answer.id}|}" class="small"><small>댓글 추가 ..</small></a>
             </div>
-            <!-- 질문 댓글 End -->
+             질문 댓글 End -->
         </div>
     </div>
     <!-- 답변의 갯수 표시 -->
